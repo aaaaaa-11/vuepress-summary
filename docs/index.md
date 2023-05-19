@@ -8,4 +8,7 @@ actions:
   - text: 面试问题
     link: /interview/crossDomain.md
     type: secondary
+  - text: 小知识
+    link: /knowledge/Scope.md
+    type: secondary
 ---

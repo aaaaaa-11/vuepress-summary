@@ -5,7 +5,12 @@ export default {
       children: [
         '/problems/crashInWXShare.md',
         '/problems/loadingOptimization.md',
-        '/problems/uploadToQiniuyun.md'
+        '/problems/uploadToQiniuyun.md',
+        '/problems/unableToFindRole.md',
+        '/problems/useEffect called twice.md',
+        '/problems/memoryLeaks.md',
+        '/problems/422.md',
+        '/problems/className type error.md',
       ]
     }
   ],
@@ -17,6 +22,16 @@ export default {
         '/interview/var&let&const.md',
         '/interview/JSDataType.md',
         '/interview/Promise.md',
+      ]
+    }
+  ],
+  '/knowledge/': [
+    {
+      text: '小知识',
+      children: [
+        '/knowledge/scope.md',
+        '/knowledge/stack memory vs heap memory.md',
+        '/knowledge/divInPElement.md',
       ]
     }
   ],

@@ -106,4 +106,6 @@ vite打包分析插件[rollup-plugin-visualizer](https://www.npmjs.com/package/r
 
 11. 封装组件，代码优化  
 
-12. 骨架屏（优化体验）
+12. SSR
+
+13. 骨架屏（优化体验）
