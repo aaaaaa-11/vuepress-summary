@@ -7,7 +7,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '问题记录文档',
   description: '记录一些开发中遇到的问题和面试问题',
-  base: './',
+  base: '/vuepress-summary/',
   theme: defaultTheme({
     sidebar
   }),

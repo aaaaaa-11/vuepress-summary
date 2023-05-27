@@ -22,6 +22,7 @@ export default {
         '/interview/var&let&const.md',
         '/interview/JSDataType.md',
         '/interview/Promise.md',
+        '/interview/written exam/index.md',
       ]
     }
   ],
