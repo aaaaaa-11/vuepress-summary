@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8185a5b6","path":"/interview/JSDataType.html","title":"JS数据类型","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"数字","slug":"数字","link":"#数字","children":[]}],"git":{"updatedTime":1683817771000,"contributors":[{"name":"aaaaaa-11","email":"2823901437@qq.com","commits":1}]},"filePathRelative":"interview/JSDataType.md"}');export{e as data};

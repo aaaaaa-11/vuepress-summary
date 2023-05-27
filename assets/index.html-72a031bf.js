@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-da4ab546","path":"/interview/written%20exam/","title":"笔试题","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"interview/written exam/index.md"}');export{e as data};

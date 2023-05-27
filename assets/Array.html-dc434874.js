@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-c718762c","path":"/knowledge/Array.html","title":"数组","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"map方法","slug":"map方法","link":"#map方法","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"knowledge/Array.md"}');export{e as data};
