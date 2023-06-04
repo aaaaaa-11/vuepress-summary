@@ -141,3 +141,138 @@ new Promise((resolve, reject) => {
 ```
 
 ## 手写Promise
+```js
+function MyPromise(executor) {
+  var self = this;
+  self.state = 'pending';
+  self.value = undefined;
+  self.onResolvedCallbacks = [];
+  self.onRejectedCallbacks = [];
+
+  function resolve(value) {
+    if (self.state === 'pending') {
+      self.state = 'fulfilled';
+      self.value = value;
+      self.onResolvedCallbacks.forEach(function(callback) {
+        callback(self.value);
+      });
+    }
+  }
+
+  function reject(reason) {
+    if (self.state === 'pending') {
+      self.state = 'rejected';
+      self.value = reason;
+      self.onRejectedCallbacks.forEach(function(callback) {
+        callback(self.value);
+      });
+    }
+  }
+
+  try {
+    executor(resolve, reject);
+  } catch (error) {
+    reject(error);
+  }
+}
+
+MyPromise.prototype.then = function(onFulfilled, onRejected) {
+  var self = this;
+  var promise2;
+
+  onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : function(value) { return value; };
+  onRejected = typeof onRejected === 'function' ? onRejected : function(reason) { throw reason; };
+
+  if (self.state === 'fulfilled') {
+    promise2 = new MyPromise(function(resolve, reject) {
+      setTimeout(function() {
+        try {
+          var x = onFulfilled(self.value);
+          resolvePromise(promise2, x, resolve, reject);
+        } catch (error) {
+          reject(error);
+        }
+      }, 0);
+    });
+  }
+
+  if (self.state === 'rejected') {
+    promise2 = new MyPromise(function(resolve, reject) {
+      setTimeout(function() {
+        try {
+          var x = onRejected(self.value);
+          resolvePromise(promise2, x, resolve, reject);
+        } catch (error) {
+          reject(error);
+        }
+      }, 0);
+    });
+  }
+
+  if (self.state === 'pending') {
+    promise2 = new MyPromise(function(resolve, reject) {
+      self.onResolvedCallbacks.push(function() {
+        setTimeout(function() {
+          try {
+            var x = onFulfilled(self.value);
+            resolvePromise(promise2, x, resolve, reject);
+          } catch (error) {
+            reject(error);
+          }
+        }, 0);
+      });
+
+      self.onRejectedCallbacks.push(function() {
+        setTimeout(function() {
+          try {
+            var x = onRejected(self.value);
+            resolvePromise(promise2, x, resolve, reject);
+          } catch (error) {
+            reject(error);
+          }
+        }, 0);
+      });
+    });
+  }
+
+  return promise2;
+};
+
+function resolvePromise(promise, x, resolve, reject) {
+  if (promise === x) {
+    reject(new TypeError('循环引用'));
+  }
+
+  if (x && (typeof x === 'object' || typeof x === 'function')) {
+    var called = false;
+
+    try {
+      var then = x.then;
+
+      if (typeof then === 'function') {
+        then.call(
+          x,
+          function(y) {
+            if (called) return;
+            called = true;
+            resolvePromise(promise, y, resolve, reject);
+          },
+          function(reason) {
+            if (called) return;
+            called = true;
+            reject(reason);
+          }
+        );
+      } else {
+        resolve(x);
+      }
+    } catch (error) {
+      if (called) return;
+      called = true;
+      reject(error);
+    }
+  } else {
+    resolve(x);
+  }
+}
+```
