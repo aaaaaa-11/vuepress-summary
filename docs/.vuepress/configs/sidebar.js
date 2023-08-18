@@ -33,7 +33,8 @@ export default {
         '/knowledge/scope.md',
         '/knowledge/stack memory vs heap memory.md',
         '/knowledge/divInPElement.md',
-        '/knowledge/records'
+        '/knowledge/records',
+        '/knowledge/url',
       ]
     }
   ],
