@@ -35,6 +35,7 @@ export default {
         '/knowledge/divInPElement.md',
         '/knowledge/records',
         '/knowledge/url',
+        '/knowledge/processAndThread',
       ]
     }
   ],
