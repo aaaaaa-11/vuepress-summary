@@ -18,11 +18,33 @@ export default {
     {
       text: '面试问题',
       children: [
-        '/interview/crossDomain.md',
-        '/interview/var&let&const.md',
-        '/interview/JSDataType.md',
-        '/interview/Promise.md',
-        '/interview/written exam/index.md',
+        {
+          text: 'JS/ES相关',
+          children: [
+            '/interview/JS/var&let&const.md',
+            '/interview/JS/JSDataType.md',
+            '/interview/JS/Promise.md'
+          ],
+        },
+        {
+          text: 'Vue相关',
+          children: [
+            '/interview/Vue/Vue vs Nuxt.md'
+          ]
+        },
+        {
+          text: '笔试题',
+          children: [
+            '/interview/written exam/index.md',
+            '/interview/written exam/lx-230921.md',
+          ]
+        },
+        {
+          text: '其他',
+          children: [
+            '/interview/Others/crossDomain.md',
+          ]
+        }
       ]
     }
   ],
