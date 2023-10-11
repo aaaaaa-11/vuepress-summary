@@ -19,17 +19,33 @@ export default {
       text: '面试问题',
       children: [
         {
+          text: 'CSS相关',
+          children: [
+            '/interview/CSS/Style Isolation.md'
+          ]
+        },
+        {
           text: 'JS/ES相关',
           children: [
             '/interview/JS/var&let&const.md',
             '/interview/JS/JSDataType.md',
-            '/interview/JS/Promise.md'
+            '/interview/JS/Promise.md',
+            '/interview/JS/JS Event Loop.md',
           ],
         },
         {
           text: 'Vue相关',
           children: [
-            '/interview/Vue/Vue vs Nuxt.md'
+            '/interview/Vue/Vue vs Nuxt.md',
+            '/interview/Vue/Nuxt Performance Improvement.md',
+            '/interview/Vue/Vue Parent-Child Component Lifecycle.md',
+            '/interview/Vue/XSS caused by v-html.md',
+          ]
+        },
+        {
+          text: 'TS',
+          children: [
+            '/interview/TS/Tuple vs Array.md'
           ]
         },
         {
@@ -43,6 +59,10 @@ export default {
           text: '其他',
           children: [
             '/interview/Others/crossDomain.md',
+            '/interview/Others/Memory Leak vs Memory Overflow.md',
+            '/interview/Others/Message Bus.md',
+            '/interview/Others/Webpack vs Vite.md',
+            '/interview/Others/Websocket Lifecycle.md',
           ]
         }
       ]

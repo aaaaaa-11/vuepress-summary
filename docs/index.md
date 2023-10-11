@@ -6,7 +6,7 @@ actions:
     link: /problems/crashInWXShare.md
     type: primary
   - text: 面试问题
-    link: /interview/crossDomain.md
+    link: /interview/CSS/Style Isolation.md
     type: secondary
   - text: 小知识
     link: /knowledge/Scope.md
