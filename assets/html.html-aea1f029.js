@@ -1,0 +1,1 @@
+import{_ as e,p as t,q as o,R as _}from"./framework-5866ffd3.js";const c={},n=_("p",null,"image alt：替换属性，图片加载失败时会代替图片显示，如果不写，爬虫可能不会爬取该图片 onerror：加载失败事件 一个页面中一般只有一个h1，用来放标题。",-1),r=[n];function s(l,a){return t(),o("div",null,r)}const h=e(c,[["render",s],["__file","html.html.vue"]]);export{h as default};

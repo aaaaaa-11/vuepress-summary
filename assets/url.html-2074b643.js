@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-a6ac9418","path":"/knowledge/url.html","title":"浏览器输入URL","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1692373671000,"contributors":[{"name":"aaaaaa-11","email":"2823901437@qq.com","commits":1}]},"filePathRelative":"knowledge/url.md"}');export{a as data};

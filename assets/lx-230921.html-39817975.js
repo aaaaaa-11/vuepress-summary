@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6754368c","path":"/interview/written%20exam/lx-230921.html","title":"lanxiang-23-09-21","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1696769169000,"contributors":[{"name":"aaaaaa-11","email":"2823901437@qq.com","commits":1}]},"filePathRelative":"interview/written exam/lx-230921.md"}');export{t as data};

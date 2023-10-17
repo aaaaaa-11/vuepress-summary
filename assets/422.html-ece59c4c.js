@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-e3d00ff2","path":"/problems/422.html","title":"状态码422","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1683817771000,"contributors":[{"name":"aaaaaa-11","email":"2823901437@qq.com","commits":1}]},"filePathRelative":"problems/422.md"}');export{a as data};

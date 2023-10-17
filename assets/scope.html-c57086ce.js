@@ -1,0 +1,1 @@
+import{_ as t,M as c,p as a,q as s,N as n,R as e,t as r}from"./framework-5866ffd3.js";const _={},d=e("h1",{id:"作用域",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#作用域","aria-hidden":"true"},"#"),r(" 作用域")],-1);function l(p,i){const o=c("Scope");return a(),s("div",null,[d,n(o)])}const f=t(_,[["render",l],["__file","scope.html.vue"]]);export{f as default};

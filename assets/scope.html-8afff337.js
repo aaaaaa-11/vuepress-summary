@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-628261af","path":"/knowledge/scope.html","title":"作用域","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1684510176000,"contributors":[{"name":"aaaaaa-11","email":"2823901437@qq.com","commits":1}]},"filePathRelative":"knowledge/scope.md"}');export{e as data};

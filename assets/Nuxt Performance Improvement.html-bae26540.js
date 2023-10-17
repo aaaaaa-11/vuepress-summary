@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0657d986","path":"/interview/Vue/Nuxt%20Performance%20Improvement.html","title":"Nuxt做了哪些性能提升","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1697039921000,"contributors":[{"name":"aaaaaa-11","email":"2823901437@qq.com","commits":1}]},"filePathRelative":"interview/Vue/Nuxt Performance Improvement.md"}');export{e as data};

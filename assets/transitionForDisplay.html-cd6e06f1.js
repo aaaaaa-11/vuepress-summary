@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7097f2c9","path":"/problems/transitionForDisplay.html","title":"transition对display不生效","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"problems/transitionForDisplay.md"}');export{t as data};

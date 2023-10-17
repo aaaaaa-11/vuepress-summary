@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-39a69fac","path":"/knowledge/stack%20memory%20vs%20heap%20memory.html","title":"栈内存与堆内存","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1684510176000,"contributors":[{"name":"aaaaaa-11","email":"2823901437@qq.com","commits":1}]},"filePathRelative":"knowledge/stack memory vs heap memory.md"}');export{a as data};
